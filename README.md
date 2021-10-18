@@ -6,7 +6,7 @@ Some amazing Docker images to work with <nameService> Out Of The Box
 [![GitHub](https://img.shields.io/static/v1.svg?color=4edafc&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=lcaparros&message=GitHub&logo=github)](https://github.com/lcaparros "view the source for all of our repositories.")
 [![GitHub Stars](https://img.shields.io/github/stars/lcaparros/docker-<nameService>.svg?color=4edafc&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/lcaparros/docker-<nameService>)
 [![GitHub Release](https://img.shields.io/github/release/lcaparros/docker-<nameService>.svg?color=4edafc&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/lcaparros/docker-<nameService>/releases)
-[![GitHub Repository](https://img.shields.io/static/v1.svg?color=4edafc&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=lcaparros/docker-<nameService>&message=GitHub%20Repo&logo=github)](https://github.com/lcaparros/docker-<nameService>/packages)
+[![GitHub Repository](https://img.shields.io/static/v1.svg?color=4edafc&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=lcaparros/docker-<nameService>&message=GitHub%20Repo&logo=github)](https://github.com/lcaparros/docker-<nameService>)
 
 ## How to push a new version of the image
 
