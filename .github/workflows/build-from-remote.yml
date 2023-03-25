@@ -9,9 +9,9 @@ jobs:
   get-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Fetch release version
         id: fetch_version
         run: |
@@ -19,10 +19,10 @@ jobs:
           curl -sL https://api.github.com/repos/allure-framework/allure2/releases/latest | \
           jq -r ".tag_name" > release-versions/allure-latest.txt
           echo "CURRENT_VERSION = $(cat release-versions/allure-latest.txt)"
-          echo ::set-output name=VERSION::$(cat release-versions/allure-latest.txt)
+          echo "VERSION=$(cat release-versions/allure-latest.txt)" >> $GITHUB_OUTPUT
       - name: Check for modified files
         id: git_check
-        run: echo ::set-output name=MODIFIED::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+        run: echo "MODIFIED=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")" >> $GITHUB_OUTPUT
       - name: Commit latest release version
         if: steps.git_check.outputs.MODIFIED == 'true'
         run: |
